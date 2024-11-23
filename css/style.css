@@ -1,31 +1,31 @@
 body {
     margin: 0;
     display: flex;
+    flex-direction: column;
     height: 100vh;
 }
 
-#wrapper {
+.header {
+    background-color: red;
+    width: 100%;
+    height: 20%;
+    text-align: center;
+}
+
+.main {
     display: flex;
-    flex-direction: column;
-    height: 100%;
-}
-
-#main-content {
-    background-color: lightcoral;
     flex: 1;
-    padding: 20px;
+    height: 80%;
 }
 
-#sidebar {
+.sidebar {
     background-color: lightgray;
     width: 30%;
-    padding: 20px;
+    text-align: center;
 }
 
-.author-name {
-    font-weight: bold;
-}
-
-.author-info {
-    font-style: italic;
+.content {
+    background-color: lightgray;
+    flex: 1;
+    text-align: center;
 }
